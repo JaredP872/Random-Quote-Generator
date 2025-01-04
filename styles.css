@@ -1,19 +1,32 @@
 body {
+  /* Centers the quote container horizontaly and vertically using flexbox  */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Sets the height of the body 100 percent of the viewport height */
   height: 100vh;
+  /* Removes default margins to ensure proper alignment  */
   margin: 0;
+  /* Sets the background color of the page */
   background-color: #f4f4f9;
+  /* Sets the font style for the text on the page */
   font-family: Arial, Helvetica, sans-serif;
+  /* Smoothly transitions the background color when it changes */
   transition: background-color 0.5s;
 }
 
 .quote-container {
+  /* centers the text inside the container */
   text-align: center;
+  /* Adds spacing inside the container */
   padding: 20px;
+  /* Adds a light gray border around the container */
   border: 1px solid #ddd;
+  /* Rounds the corners of the container */
+  border-radius: 10px;
+  /* Adds a subtle shadow for a 3D effect */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* sets the container's background to white */
   background-color: #fff;
 }
 
@@ -30,12 +43,14 @@ body {
 #quote-btn:hover {
   background-color: #0056b3;
 }
-
+/* Defines a custome animation called (fade-in) */
 @keyframes fade-in {
+  /* At the start of the animation the element is invisable (opacity: 0) and slghtly below its original position(translateY(10px)) */
   from {
     opacity: 0;
     transform: translateY(10px);
   }
+  /* At the end of the animation the element is fully visable (opacity: 1) and in its orignal position (translateY(0) */
   to {
     opacity: 1;
     transform: translateY(0);
